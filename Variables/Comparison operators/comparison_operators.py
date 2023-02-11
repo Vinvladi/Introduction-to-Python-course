@@ -6,17 +6,17 @@ three = 3
 # comparisons are performed at the same time.
 print(f"one < two < three: {one < two < three}")
 
-is_greater = three ? two    # insert any operator rendering the expression true. There are several options.
+is_greater = three > two    # insert any operator rendering the expression true. There are several options.
 print(f"three is greater than two: {is_greater}")
 
-is_less = one ? three   # insert any operator rendering the expression true. There are several options.
+is_less = one < three   # insert any operator rendering the expression true. There are several options.
 print(f"one is smaller than three: {is_less}")
 
-is_true = one ? three ? two     # insert any operator rendering the expression true. There are several options.
+is_true = one < three > two     # insert any operator rendering the expression true. There are several options.
 print(f"one is smaller than three, which is greater than two: {is_true}")
 
-not_equal = one ? two  # insert any operator rendering the expression true. There are several options.
+not_equal = one != two  # insert any operator rendering the expression true. There are several options.
 print(f"one does not equal two: {not_equal}")
 
-is_equal = three ? three   # insert any operator rendering the expression true. There are several options.
+is_equal = three == three   # insert any operator rendering the expression true. There are several options.
 print(f"three equals three : {is_equal}")
